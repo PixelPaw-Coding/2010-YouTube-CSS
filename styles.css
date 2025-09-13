@@ -1,0 +1,126 @@
+/* ==UserStyle==
+@name           YouTube Retro 2010 Theme
+@namespace      youtube.com
+@version        1.0.0
+@description    Reverts modern YouTube UI to resemble YouTube circa 2010: flatter, simpler, and classic.
+@author         PixelPaw Paramounth
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+
+/*
+============================
+ YouTube 2010 Retro Theme
+============================
+
+📜 Description:
+A clean CSS overhaul to visually restore YouTube’s look from around 2010.
+
+🎯 Goals:
+- Remove Material Design effects (shadows, rounded corners)
+- Replace modern styles with light backgrounds, square borders, basic fonts
+- Hide UI elements that didn't exist in 2010
+
+🛠 Usage:
+- Works best with the Stylus browser extension
+- Paste this entire style into a new Stylus style for youtube.com
+- Optional: Replace YouTube’s logo with a retro one using `content: url(...)`
+
+📦 Optional Enhancements:
+#logo-icon-container::before {
+  content: url("https://upload.wikimedia.org/wikipedia/commons/7/75/YouTube_icon_2011.svg");
+  display: block;
+  width: 100%;
+  height: auto;
+}
+(You may need to hide the original logo.)
+
+📅 Updated: September 2025
+🎨 Created by: PixelPaw Paramounth
+*/
+
+/* General reset / body */
+body, #page, #header, #footer, #masthead, #content, #container {
+  background-color: #f9f9f9 !important;
+  color: #333 !important;
+  font-family: Arial, sans-serif !important;
+}
+
+/* Top navigation bar */
+#masthead-container, #masthead, #masthead-positioner {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #ccc !important;
+  box-shadow: none !important;
+}
+
+/* Logo */
+#logo-icon-container, .yt-logo, .logo-icon {
+  filter: none !important;
+}
+
+/* Search bar */
+#search, #search-input, #search-form {
+  background-color: #fff !important;
+  border: 1px solid #ccc !important;
+  border-radius: 2px !important;
+}
+
+/* Sidebar/menu links */
+#guide, #menu, .branded-page-v2-primary-header, .yt-masthead-buttons {
+  background: #f1f1f1 !important;
+  border-right: 1px solid #ccc !important;
+}
+
+/* Video thumbnails / grid */
+.yt-lockup, .yt-shelf-grid-item {
+  border: 1px solid #ddd !important;
+  background: #fff !important;
+  margin-bottom: 12px !important;
+  padding: 4px !important;
+}
+
+/* Video page / player section */
+#player, .ytp-chrome-top, .ytp-chrome-bottom, .ytp-progress, .html5-video-player {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+/* Comments area */
+#comments, #watch-discussion, .comment-renderer, .yt-comment-text-content {
+  background: #fff !important;
+  border-top: 1px solid #ccc !important;
+  color: #333 !important;
+}
+
+/* Remove modern rounded corners / shadows */
+*, *::before, *::after {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Buttons */
+.yt-button, button, .yt-uix-button, .yt-subscribe-button, .yt-uix-button-default {
+  background-color: #e9e9e9 !important;
+  border: 1px solid #888 !important;
+  color: #444 !important;
+}
+
+/* Footer */
+#footer, .yt-footer-links {
+  background: #f1f1f1 !important;
+  color: #555 !important;
+  border-top: 1px solid #ccc !important;
+}
+
+/* Misc tweaks: reduce use of modern icons / remove Material styles */
+.icon, .yt-icon, svg, .mdc-icon-button {
+  fill: #444 !important;
+  stroke: none !important;
+}
+
+/* Hide/disguise elements not around in 2010 (if possible) */
+.yt-modern-icon, .guide-icon, .yt-masthead-signin, .yt-masthead-user {
+  display: none !important;
+}
+
+}
