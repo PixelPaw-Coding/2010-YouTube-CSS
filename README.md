@@ -65,8 +65,7 @@ Replace the modern YouTube logo with an old-school one:
 
 ## 📷 Screenshots
 
-> _Add screenshots here to show before/after YouTube UI changes._  
-> Recommended: homepage, video page, sidebar.
+![Screenshot of homepage](https://userstyles.world/preview/24168/1.webp)
 
 ---
 
