@@ -65,8 +65,7 @@ Replace the modern YouTube logo with an old-school one:
 
 ## 📷 Screenshots
 
-![Screenshot of homepage](https://userstyles.world/preview/24168/1.webp)
-
+![Screenshot of homepage](https://userstyles.world/preview/24168/2.webp)
 ---
 
 ## ✅ Tested On
